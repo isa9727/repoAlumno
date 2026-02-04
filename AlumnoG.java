@@ -7,6 +7,7 @@ public class AlumnoG {
     private double nota1;
     private double nota2;
     private double nota3;
+    private double media; // 1. El atributo nuevo
 
     public AlumnoG(String nombre, String telefono) {
         this.nombre = nombre;
@@ -17,7 +18,15 @@ public class AlumnoG {
         this.nota1 = 1 + r.nextInt(10);
         this.nota2 = 1 + r.nextInt(10);
         this.nota3 = 1 + r.nextInt(10);
+
+    // 2. LA LÓGICA: Calculamos y guardamos el valor
+        this.media = (nota1 + nota2 + nota3) / 3.0; 
     }
+
+    public double getMedia() {
+        return media;
+    }
+
 
     public String getNombre() {
         return nombre;
@@ -48,9 +57,9 @@ public class AlumnoG {
         return nota3;
     }
 
-    public double getMedia() {
-        return (nota1 + nota2 + nota3) / 3.0;
-    }
+    //public double getMedia() {
+       // return (nota1 + nota2 + nota3) / 3.0;
+    //}
 
     @Override
     public String toString() {
