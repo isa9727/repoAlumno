@@ -4,15 +4,14 @@ public class AlumnoG {
 
     private String nombre;
     private String telefono;
-    private int edad;
     private double nota1;
     private double nota2;
     private double nota3;
 
-    public AlumnoG(String nombre, String telefono, int edad) {
+    public AlumnoG(String nombre, String telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
-        this.edad = edad;
+       
 
         Random r = new Random();
         this.nota1 = 1 + r.nextInt(10);
@@ -36,13 +35,6 @@ public class AlumnoG {
         this.telefono = telefono;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
 
     public double getNota1() {
         return nota1;
@@ -64,7 +56,6 @@ public class AlumnoG {
     public String toString() {
         return "AlumnoG{" +
                 "nombre='" + nombre + '\'' +
-                ", telefono='" + telefono + '\'' +
                 ", edad=" + edad +
                 ", nota1=" + nota1 +
                 ", nota2=" + nota2 +
