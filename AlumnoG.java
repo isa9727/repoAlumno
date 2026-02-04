@@ -65,11 +65,11 @@ public class AlumnoG {
     public String toString() {
         return "AlumnoG{" +
                 "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
+                ", telefono='" + telefono + '\'' +
                 ", nota1=" + nota1 +
                 ", nota2=" + nota2 +
                 ", nota3=" + nota3 +
-                ", media=" + String.format("%.2f", getMedia()) +
+                ", media=" + String.format("%.2f", media) +
                 '}';
     }
 }
